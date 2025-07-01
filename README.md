@@ -69,3 +69,7 @@ uvicorn fashionclip2:app --host 127.0.0.1 --port 8001 --reload
 
 Technical Report : ai-fashion-assistant-report.pdf
 Presentation : ai-fashion-assistant-presentation.pptx
+
+
+Note:
+I didn't add the .env, the required images (icons etc), package.json and package-lock.json etc. And the css files doesen't depend on their names like a jsx file's css file can't be in a different name so you should check it every css file when u want to change a class's style.
