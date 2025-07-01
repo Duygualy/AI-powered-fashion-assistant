@@ -1,0 +1,74 @@
+.reset-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: -20px; 
+}
+
+.reset-text {
+  color: #EC7FA9;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.reset-underline {
+  width: 65px;
+  height: 6px;
+  margin-top: -20px;
+  background: #EC7FA9;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+  background-color: transparent !important;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+  box-shadow: 0 0 0px 1000px transparent inset !important;
+  -webkit-text-fill-color: #BE5985 !important; 
+  color: #BE5985 !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.popupr {
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  max-width: 350px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: white;
+  z-index: 1000;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.success-popupr {
+  background-color: #4caf50; 
+}
+
+.error-popupr {
+  background-color: red; 
+}
+
+@media (max-width: 768px) {
+  .reset-password-container {
+      width: 95%;
+      padding: 20px;
+  }
+
+  .reset-password-form input,
+  .reset-password-form button {
+      width: 100%;
+  }
+
+  .reset-password-container h2 {
+      font-size: 28px;
+  }
+}

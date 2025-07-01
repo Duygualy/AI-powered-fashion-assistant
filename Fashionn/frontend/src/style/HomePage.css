@@ -1,0 +1,270 @@
+.cropper-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  background-color: #f0f0f0;
+}
+  
+.cropper-controls {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 1rem;
+}
+
+.product-card {
+  position: relative;
+  width: 200px;
+  padding: 12px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.image-wrapper img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.fav-button {
+  position: absolute;
+  right: 2px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  height: 46px;
+  width: 46px;
+  font-size: 1.4rem;
+  margin-top: -305px;
+  transition: 0.2s;
+}
+
+.fav-button:hover {
+  color: #ff1f75;
+}
+
+
+.icon-bar{
+  position: absolute;
+  margin-left: 14px;
+  margin-top: 13px;
+  width: 40px;
+  height: 40px;
+  padding: 4px;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.product-name {
+  color: #e91e63; 
+  font-weight: 600;
+}
+
+.product-link {
+  display: inline-block;
+  margin-top: 6px;
+  color: #e86cb6;
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.product-link:hover {
+  color: #ff1f75;
+}
+
+.price-input {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.cancel-btn:focus,
+.delete-btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.u-button {
+  background-color: #ff6b9d;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 0.5rem 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.u-button:focus {
+  outline: none;
+}
+
+.u-button:hover {
+  background-color: #ff1f75;
+}
+
+.notification-card {
+  background-color: #f0f0f0;
+  padding: 16px 20px;
+  border-radius: 14px;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.notification-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.notification-card:hover {
+  background-color: #e8e8e8;
+}
+
+.notification-time {
+  font-size: 13px;
+  color: #555;
+  margin-top: 8px;
+}
+
+.arrow {
+  color: #e91e63;
+  font-weight: bold;
+  margin: 0 6px;
+}
+
+.notification-button-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.notification-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: white;
+  color: hotpink;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 999px;
+  border: 1px solid hotpink;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.page-button {
+  background-color: #f8d1e0;
+  color: #b4005c;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 50%;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none; 
+}
+
+.page-button:hover {
+  background-color: #ffcce0;
+}
+
+.page-button.active {
+  background-color: #ff69b4;
+  color: white;
+  transform: scale(1.1);
+}
+
+.page-button:focus {
+  outline: none;
+}
+
+.icon-tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  background-color: #ffdbed;
+  color: #b4005c;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 8px;
+  position: absolute;
+  z-index: 1;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: 0.75rem;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.icon-tooltip:hover .tooltip-text {
+  visibility: visible;
+}
+
+.removeImageButton {
+  position: absolute;
+  top: 10px;
+  margin-left: 180px;
+  transform: scale(1.5);
+  border: none;
+  color: #e40202;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+  padding: 0 6px;
+  border-radius: 50%;
+  background: transparent;
+}
+
+.removeImageButton:hover {
+  transform: scale(1.8);      
+  transition: all 0.2s ease; 
+  outline: none; 
+}
+
+.upload-icon {
+ width: 30px;
+ height: 30px";
+}
+
+.upload-icon:hover {
+  transform: scale(1.2); 
+  transition: color 0.2s ease;
+}
